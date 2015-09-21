@@ -1,7 +1,9 @@
 /**
  * @param array
  * @return float
- */
+ * takes an array with scores from participants
+*/
+ 
 function output_real_nps($nps_array)
 {
     $detractors=0;
