@@ -15,9 +15,9 @@ function output_real_nps($nps_array)
     {
         if (is_numeric($nps_array[$i]))
         {
-            if ($nps_array[$i] <= 6 && $nps_array[$i] >= 0)
+            if ($nps_array[$i]<=6 && $nps_array[$i]>=0)
                 $detractors++;
-            if ($nps_array[$i] >= 9 && $nps_array[$i] <= 10)
+            if ($nps_array[$i]>= 9 && $nps_array[$i]<=10)
                 $promoters++;
         }
     }
