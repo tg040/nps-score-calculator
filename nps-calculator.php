@@ -29,5 +29,4 @@ function output_real_nps($nps_array)
         $nps_score='0';
 
     return round($nps_score,1);
-
 }
