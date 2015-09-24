@@ -8,7 +8,6 @@ function output_real_nps($nps_array)
 {
     $detractors=0;
     $promoters=0;
-
     $arr_length=count($nps_array);
 
     for ($i=0;$i<$arr_length;$i++)
