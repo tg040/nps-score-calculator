@@ -23,7 +23,7 @@ function output_real_nps($nps_array)
 
     // div by 0 not allowed
     if ($arr_length>0)
-      $nps_score=(($promoters-$detractors)/$arr_length)*100;
+        $nps_score=(($promoters-$detractors)/$arr_length)*100;
     else
         $nps_score='0';
 
