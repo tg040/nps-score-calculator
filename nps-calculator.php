@@ -1,4 +1,6 @@
-/**
+<?
+
+/*
  * @param array
  * @return float
  * takes an array with scores from participants (e.g. array(1,10,4,5,9))
