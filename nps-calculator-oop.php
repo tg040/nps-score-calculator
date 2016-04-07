@@ -2,6 +2,7 @@
 
 /**
  * Class NpsCalculator
+ * Outputs the nps score given an array of scores
  * OOP way
  */
 class NpsCalculator {
@@ -34,6 +35,6 @@ class NpsCalculator {
 $npsScore = new NpsCalculator;
 $npsArray=array(0,3,4,10,10,4,10,10,10,10);
 
-echo 'NPS score: '.$npsScore->returnNpsScore($npsArray).'<br />';
+echo 'NPS Score: '.$npsScore->returnNpsScore($npsArray).'<br />';
 
 ?>
