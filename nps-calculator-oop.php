@@ -7,9 +7,9 @@
  */
 class NpsCalculator {
 
-    public $detractors;
-    public $promoters;
-    public $npsScore;
+    public $detractors=0;
+    public $promoters=0;
+    public $npsScore=0;
 
     public function returnNpsScore($npsArray) {
         $arrLength=count($npsArray);
