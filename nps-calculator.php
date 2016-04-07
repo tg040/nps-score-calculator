@@ -1,10 +1,11 @@
 /**
  * @param array
  * @return float
- * takes an array with scores from participants
-*/
- 
-function output_real_nps($nps_array)
+ * takes an array with scores from participants (e.g. array(1,10,4,5,9))
+ * procedural way
+ */
+
+function return_nps_score($nps_array)
 {
     $detractors=0;
     $promoters=0;
@@ -12,6 +13,7 @@ function output_real_nps($nps_array)
 
     for ($i=0;$i<$arr_length;$i++)
     {
+        // let`s make sure all elements are numeric
         if (is_numeric($nps_array[$i]))
         {
             if ($nps_array[$i]<=6 && $nps_array[$i]>=0)
@@ -21,7 +23,7 @@ function output_real_nps($nps_array)
         }
     }
 
-    // div by 0 not allowed
+    // if array is empty, then return 0 since div by 0 is not allowed
     if ($arr_length>0)
         $nps_score=(($promoters-$detractors)/$arr_length)*100;
     else
@@ -29,3 +31,8 @@ function output_real_nps($nps_array)
 
     return round($nps_score,1);
 }
+
+// here is how you call it
+echo 'NPS Score: '.return_nps_score(array(0,3,4,10,10,4,10,10,10,10)).'<br />';
+
+?>
